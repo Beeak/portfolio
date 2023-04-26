@@ -93,10 +93,60 @@ main div p {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 85px;
+    border-bottom: 1px solid #000000;   
 }
 
 .projects a {
     width: 776.45px;
     height: 638.67px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
+}
+
+.projects a img {
+    width: 100%;
+}
+
+.projects a div {
+    width: 100%;
+}
+
+.projects a div h3 {
+    font-family: 'arquitecta_heavy';
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.projects a div p {
+    font-family: 'arsenal', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0.1em;
+}
+
+.reveal1 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal2 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+    transition-delay: 0.5s;
+}
+
+.reveal1.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal2.active {
+   transform: translateY(0);
+   opacity: 1;
 }
