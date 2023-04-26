@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+@font-face {
+    font-family: 'arquitecta_heavy';
+    src: url('src/fonts/arquitectaheavy-webfont.woff2') format('woff2'),
+         url('src/fonts/arquitectaheavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 52px 0 52px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-button {
+    font-family: 'arquitecta_heavy';
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.nav-name {   
+    font-size: 35px;
+}
+
+.nav-role {
+    font-size: 24px;
+}
+
+.nav-about {
+    font-size: 35px;
+}
+
+.nav-about a {
+    font-family: 'arquitecta_heavy';
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}

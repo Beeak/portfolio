@@ -52,11 +52,11 @@ li {
     font-size: 24px;
 }
 
-.nav-contact {
+.nav-about {
     font-size: 35px;
 }
 
-.nav-contact a {
+.nav-about a {
     font-family: 'arquitecta_heavy';
     color: #000000;
     text-decoration: none;
@@ -99,6 +99,7 @@ main div p {
 .projects a {
     width: 776.45px;
     height: 638.67px;
+    text-decoration: none;
     margin-bottom: 60px;
 }
 
