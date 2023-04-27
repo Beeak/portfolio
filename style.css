@@ -14,14 +14,10 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0 52px 0 52px;
-}
-
 header {
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
+    margin: 35px 52px 0 52px;
     border-bottom: 1px solid #000000;   
 }
 
@@ -81,8 +77,8 @@ img {
     letter-spacing: 0.1em;
 }
 
-main {
-    margin-top: 28px;
+main .projects, .contact {
+    margin: 28px 52px 0 52px;
 }
 
 main div p {
@@ -173,7 +169,7 @@ main div p {
 
 .skill-slider {
     width: 100%;
-    background: #000000;
+    background: #5B6BA3;
     height: 600px;
 }
 
@@ -209,5 +205,5 @@ footer div p {
 }
 
 footer {
-    margin-bottom: 50px;
+    margin: 0 52px 50px 52px;
 }
