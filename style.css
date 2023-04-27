@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -77,7 +81,7 @@ img {
     letter-spacing: 0.1em;
 }
 
-main .projects, .contact {
+main .projects, .contact, .skills-text {
     margin: 28px 52px 0 52px;
 }
 
@@ -85,6 +89,10 @@ main div p {
     font-family: 'arsenal', sans-serif;
     font-size: 28px;
     color: #000000;
+}
+
+.project-text {
+    margin: 10px 52px 10px 52px;
 }
 
 .projects {
@@ -104,6 +112,7 @@ main div p {
 
 .projects a img {
     width: 100%;
+    object-fit: cover;
 }
 
 .projects a div {
@@ -141,6 +150,14 @@ main div p {
     transition-delay: 0.5s;
 }
 
+.reveal3 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+    transition-delay: 0.5s;
+}
+
 .reveal1.active {
     transform: translateY(0);
     opacity: 1;
@@ -150,6 +167,11 @@ main div p {
    transform: translateY(0);
    opacity: 1;
 }
+
+.reveal3.active {
+    transform: translateY(0);
+    opacity: 1;
+ }
 
 #personal-github {
     object-fit: contain;
@@ -169,8 +191,14 @@ main div p {
 
 .skill-slider {
     width: 100%;
-    background: #5B6BA3;
+    background: #020202;
     height: 600px;
+}
+
+.about {
+    height: 2128px;
+    background: linear-gradient(180deg, rgba(2, 2, 2, 0) 0%, #020202 12.5%);
+    padding-top: 350px;
 }
 
 .contact {
@@ -178,16 +206,42 @@ main div p {
     margin-bottom: 392px;
 }
 
-.contact p {
-    font-size: 70px;
-    font-family: 'arquitecta_heavy';
-    text-transform: uppercase;
+.contact h1 {
+    margin-bottom: 20px;
 }
 
-.contact button {
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 94px;
+}
+
+.about-me img {
+    height: 1045px;
+}
+
+.about-me p {
+    width: 700px;
+    margin-left: 20px;
+    font-family: arsenal;
+    font-size: 50px;
+    color: #fff;
+}
+
+.typewrite {
+    
+    font-size: 58px;
+    color: #fff;
+    font-family: 'arquitecta_heavy';
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#contact-button {
     width: 700px;
     height: 150px;
-    margin-top: 34px;
+    text-decoration: none;
     font-family: 'arquitecta_heavy';
     color: #ffffff;
     font-size: 90px;
@@ -201,9 +255,10 @@ footer div p {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #020202;
+    color: #fff;
 }
 
 footer {
-    margin: 0 52px 50px 52px;
+    padding: 0 52px 50px 52px;
+    background-color: #020202;
 }

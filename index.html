@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <title>Home</title>
   </head>
   <body>
@@ -21,7 +20,7 @@
         </div>
         <div>
           <ul>
-            <li class="nav-about"><a href="about.html">About</a></li>
+            <li class="nav-about"><a href="#about">About</a></li>
           </ul>
       </nav>
       <div class="header-introduction">
@@ -31,7 +30,7 @@
       </div>
     </header>
     <main>
-      <div>
+      <div class="project-text">
         <p>Some of my past and or current projects</p>
       </div>
       <div class="projects">
@@ -84,9 +83,19 @@
         <div class="skill-slider">
         </div>
       </div>
-      <div class="contact">
-        <p id="typedtext"></p>
-        <button>CONTACT ME!</button>
+      <div id="about" class="about reveal1">
+        <div class="contact">
+          <div class="about-me reveal3">
+            <img src="/src/img/SlackPFP 1.png" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat est error provident itaque nisi officiis recusandae iure iusto neque beatae voluptates minus vero numquam facilis omnis quibusdam, temporibus sit saepe eligendi quam magnam, ipsa esse eius! Ducimus, vitae, nihil doloribus pariatur adipisci mollitia facilis similique eos, libero possimus corporis inventore.</p>
+          </div>
+          <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "Getting any new project ideas?", "Thinking I could help with anything?", "Thinking I could help with anything?", "If so then get in contact!" ]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>          
+          <a id="contact-button" href="mailto:dudetitan@gmail.com">CONTACT ME!</a>
+        </div>
       </div>
     </main>
     <footer>
@@ -95,4 +104,9 @@
     </footer>
     <script src="/index.js"></script>
   </body>
-</html>
+  </html>
+  
+  
+  
+  
+  <p id="typedtext"></p>
