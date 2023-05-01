@@ -1,5 +1,19 @@
 {
+  "name": "portfolio",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module",
   "dependencies": {
-    "@glidejs/glide": "^3.6.0"
-  }
+    "@glidejs/glide": "^3.6.0",
+    "@splidejs/splide": "^4.1.4"
+  },
+  "devDependencies": {
+    "@roots/bud": "^6.12.2",
+    "@roots/bud-babel": "^6.12.2",
+    "@roots/bud-eslint": "^6.12.2",
+    "@roots/bud-sass": "^6.12.2"
+  },
+  "version": "0.0.0"
 }
