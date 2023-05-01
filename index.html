@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/public/css/app.css" />
     <title>Home</title>
   </head>
   <body>
@@ -35,42 +35,42 @@
       </div>
       <div class="projects">
         <a class="reveal1" href="https://github.com/Beeak/figma_rauniste">
-          <img src="/src/img/figma-rauniste.png" alt="">
+          <img src="/public/images/figma-rauniste.png" alt="">
           <div>
             <h3>Figma Portfolio Recreation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident nostrum sit?</p>
+            <p>The first project where we had to bring a website to life from a pre-made Figma template</p>
           </div>
         </a>
         <a class="reveal2" href="https://github.com/Beeak/gitlab-copy">
-          <img src="/src/img/gitlab.png" alt="">
+          <img src="/public/images/gitlab.png" alt="">
           <div>
             <h3>GitLab Front Page</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident nostrum sit?</p>
+            <p>First few sections from the GitLab website</p>
           </div>
         </a>
         <a class="reveal1" href="https://github.com/Beeak/delfi2">
-          <img src="/src/img/delfi.png" alt="">
+          <img src="/public/images/delfi.png" alt="">
           <div>
             <h3>Delfi Front Page</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident nostrum sit?</p>
+            <p>First three sections of the Delfi page</p>
           </div>
         </a>
         <a class="reveal2" href="https://github.com/sander-aleks/KAK100Portfolio">
-          <img src="/src/img/first project.png" alt="">
+          <img src="/public/images/first project.png" alt="">
           <div>
             <h3>School's 100th Birthday Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident nostrum sit?</p>
+            <p>My first group website project, happened when we were quite new to the school so we didnt have the most skills</p>
           </div>
         </a>
         <a class="reveal1" href="https://github.com/Beeak/fcc_magazine">
-          <img src="/src/img/freecodecamp.png" alt="">
+          <img src="/public/images/freecodecamp.png" alt="">
           <div>
             <h3>Some freeCodeCamp Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil provident nostrum sit?</p>
+            <p>Just a freeCodeCamp thing I did a while back</p>
           </div>
         </a>
         <a class="reveal2" href="https://github.com/Beeak">
-          <img id="personal-github" src="/src/img/github.png" alt="">
+          <img id="personal-github" src="/public/images/github.png" alt="">
           <div>
             <h3>Find Some Of My Other Smaller Projects Here</h3>
           </div>
@@ -80,13 +80,20 @@
         <div class="skills-text">
           <p>My Current Skills</p>
         </div>
-        <div class="skill-slider">
-        </div>
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">Slide 01</li>
+              <li class="splide__slide">Slide 02</li>
+              <li class="splide__slide">Slide 03</li>
+            </ul>
+          </div>
+        </section>
       </div>
       <div id="about" class="about reveal1">
         <div class="contact">
           <div class="about-me reveal3">
-            <img src="/src/img/SlackPFP 1.png" alt="">
+            <img src="/public/images/SlackPFP 1.png" alt="">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat est error provident itaque nisi officiis recusandae iure iusto neque beatae voluptates minus vero numquam facilis omnis quibusdam, temporibus sit saepe eligendi quam magnam, ipsa esse eius! Ducimus, vitae, nihil doloribus pariatur adipisci mollitia facilis similique eos, libero possimus corporis inventore.</p>
           </div>
           <h1>
@@ -102,7 +109,7 @@
       <div>
         <p>© 2023 Henry Kalvi Kaalma</p>
     </footer>
-    <script src="/index.js"></script>
+    <script type="module" src="/public/js/app.js"></script>
   </body>
   </html>
   

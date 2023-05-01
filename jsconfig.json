@@ -1,0 +1,18 @@
+{
+  "extends": "@roots/bud/config/jsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "resources",
+    "paths": {
+      "@fonts/*": ["fonts/*"],
+      "@images/*": ["images/*"],
+      "@scripts/*": ["scripts/*"],
+      "@styles/*": ["styles/*"]
+    },
+    "types": [
+      "@roots/bud",
+      "@roots/bud-postcss",
+    ]
+  },
+  "include": ["bud.config.js", "resources"],
+  "exclude": ["node_modules", "public"]
+}

@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'arquitecta_heavy';
-    src: url('src/fonts/arquitectaheavy-webfont.woff2') format('woff2'),
-         url('src/fonts/arquitectaheavy-webfont.woff') format('woff');
+    src: url('/fonts/arquitectaheavy-webfont.woff2') format('woff2'),
+         url('/fonts/arquitectaheavy-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -196,14 +196,14 @@ main div p {
 }
 
 .about {
-    height: 2128px;
+    height: 2000px;
     background: linear-gradient(180deg, rgba(2, 2, 2, 0) 0%, #020202 12.5%);
     padding-top: 350px;
 }
 
 .contact {
     margin-top: 94px;
-    margin-bottom: 392px;
+    margin-bottom: 100px;
 }
 
 .contact h1 {
