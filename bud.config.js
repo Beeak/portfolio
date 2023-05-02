@@ -6,14 +6,10 @@
  * @param {import('@roots/bud').Bud} app
  */
 export default async (app) => {
-  app.html({
-    template: `./index.html`,
-  });
-
   app
     .setPath(`@src`, `resources`)
-    .setPath("@scripts", "resources/scripts")
-    .setPath("@modules", "node_modules");
+    .setPath(`@dist`, `public`)
+    .setPath("@scripts", "resources/scripts");
 
   /*
    * @see {@link https://bud.js.org/docs/bud.hash}
@@ -28,7 +24,7 @@ export default async (app) => {
    */
   app
     .entry({
-      app: [`scripts/app.js`, "styles/app.scss"],
+      app: [`/scripts/app.js`, `/styles/app.scss`],
     })
     .assets(["images"]);
 

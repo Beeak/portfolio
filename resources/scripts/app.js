@@ -1,19 +1,8 @@
-import { Splide } from "@splidejs/splide";
+import { domReady } from "./modules/domReady.js";
+import { skillsSlider } from "./modules/skillsSlider.js";
 
-const domReady = (onReady) => {
-  window.requestAnimationFrame(async function check() {
-    document.body ? await onReady() : window.requestAnimationFrame(check);
-  });
-};
-
-/**
- * Application entrypoint
- */
 domReady(async () => {
-  window.console.log("works");
-
   function reveal1() {
-    console.log("reveal");
     var reveals = document.querySelectorAll(".reveal1");
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -120,14 +109,7 @@ domReady(async () => {
     document.body.appendChild(css);
   };
 
-  var splide = new Splide(".splide", {
-    type: "loop",
-    padding: "5rem",
-  });
-
-  splide.mount();
-
-  console.log("mounted");
+  skillsSlider.init();
 });
 
 /**
