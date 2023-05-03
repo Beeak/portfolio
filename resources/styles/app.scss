@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&display=swap");
+@import "@splidejs/splide/dist/css/splide.min.css";
+
+@font-face {
+  font-family: "arquitecta_heavy";
+  src: url("/fonts/arquitectaheavy-webfont.woff2") format("woff2"),
+    url("/fonts/arquitectaheavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "./components/skills";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 52px 0 52px;
+  border-bottom: 1px solid #000000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  height: 517.63px;
+}
+
+.nav-button {
+  font-family: "arquitecta_heavy";
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.nav-name {
+  font-size: 35px;
+}
+
+.nav-role {
+  font-size: 24px;
+}
+
+.nav-about {
+  font-size: 35px;
+}
+
+.nav-about a {
+  font-family: "arquitecta_heavy";
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.header-introduction {
+  align-self: center;
+  width: 705px;
+  margin-top: 68px;
+  margin-bottom: 32px;
+}
+
+.header-introduction p {
+  font-family: "arsenal", sans-serif;
+  font-size: 35px;
+  color: #000000;
+  letter-spacing: 0.1em;
+}
+
+main .projects,
+.contact,
+.skills-text {
+  margin: 28px 52px 0 52px;
+}
+
+main div p {
+  font-family: "arsenal", sans-serif;
+  font-size: 28px;
+  color: #000000;
+}
+
+.project-text {
+  margin: 10px 52px 10px 52px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 85px;
+  border-bottom: 1px solid #000000;
+}
+
+.projects a {
+  width: 776.45px;
+  height: 638.67px;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+
+.projects a img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.projects a div {
+  width: 100%;
+}
+
+.projects a div h3 {
+  font-family: "arquitecta_heavy";
+  margin-bottom: 5px;
+  font-size: 35px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.projects a div p {
+  font-family: "arsenal", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 0.1em;
+}
+
+.reveal1 {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal2 {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  transition-delay: 0.5s;
+}
+
+.reveal3 {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+  transition-delay: 0.5s;
+}
+
+.reveal1.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal2.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal3.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#personal-github {
+  object-fit: contain;
+}
+
+.about {
+  height: 2000px;
+  background: linear-gradient(180deg, rgba(2, 2, 2, 0) 0%, #020202 12.5%);
+  padding-top: 350px;
+}
+
+.contact {
+  margin-top: 94px;
+  margin-bottom: 100px;
+}
+
+.contact h1 {
+  margin-bottom: 20px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.about-me img {
+  height: 1045px;
+}
+
+.about-me p {
+  width: 700px;
+  margin-left: 20px;
+  font-family: arsenal;
+  font-size: 50px;
+  color: #fff;
+}
+
+.typewrite {
+  font-size: 58px;
+  color: #fff;
+  font-family: "arquitecta_heavy";
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#contact-button {
+  width: 700px;
+  height: 150px;
+  text-decoration: none;
+  font-family: "arquitecta_heavy";
+  color: #ffffff;
+  font-size: 90px;
+  background: #5b6ba3;
+  border-radius: 25px;
+}
+
+footer div p {
+  font-family: "arsenal", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+footer {
+  padding: 0 52px 50px 52px;
+  background-color: #020202;
+}

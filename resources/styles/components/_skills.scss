@@ -1,0 +1,36 @@
+.skills {
+  margin-top: 94px;
+  margin-bottom: 392px;
+}
+
+.skills__text {
+  font-family: "arsenal", sans-serif;
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 94px;
+}
+
+.skill__slider {
+  width: 100%;
+  background: #020202;
+  height: 600px;
+}
+
+.skills__slider-slide-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.skills__slider-slide {
+  transform: scale(0.75);
+  transition: 300ms ease-in-out;
+  opacity: 0.75;
+  filter: blur(0.75rem);
+
+  &.is-active {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
